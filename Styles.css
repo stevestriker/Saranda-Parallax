@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#B1 {
+    z-index: 10;
+}
+
+#B2 {
+    z-index: 9;
+}
+
+#B3 {
+    z-index: 10;
+}
+
+#B4 {
+    z-index: 9;
+}
+
+#B5 {
+    z-index: 5;
+}
+
+#B6 {
+    z-index: 6;
+}
+
+#Sky {
+    z-index: 5;
+    
+}
+
+#Sea {
+    z-index: 0;
+    transform: scale(1.025);
+}
