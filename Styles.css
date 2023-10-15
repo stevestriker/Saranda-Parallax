@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #7ea0b2;
+    background: linear-gradient(180deg, #7ea0b2 0%, #393c41 40%);
+}
+
 .wrapper {
     height: 100vh;
     width: 100vw;
