@@ -1,3 +1,18 @@
+const parallax_el = document.querySelectorAll('.parallax');
+
+let xValue = 0, yValue = 0;
+
+window.addEventListener('mousemove', (e) => {
+        xValue = e.clientX;
+        yValue = e.clientY;
+        console.log(xValue, yValue)
+
+        parallax_el.forEach((ss) => {
+            let speedx = ss.dataset.speedx;
+            ss.style.transform = `translateX(calc(-50% + ${-xValue * speedx}px)) translateY(calc(-50% + ${yValue}px))`;
+        })
+})
+
 let timeline = gsap.timeline({ defaults: { duration: .25, ease: "power2.out"} });
 
 timeline.from("#B1", {yPercent:100})

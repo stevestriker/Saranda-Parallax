@@ -3,8 +3,11 @@
 }
 
 body {
+    height: 100vh;
+    width: 100vw;
     background: #7ea0b2;
     background: linear-gradient(180deg, #7ea0b2 0%, #393c41 40%);
+    overflow: hidden;
 }
 
 .loader {
@@ -51,8 +54,10 @@ body {
     left: 0;
     height: 100vh;
     width: 100vw;
-    position: absolute;
+    position: relative;
     overflow: hidden;
+    /* object-fit: contain; */
+    /* transform: translate(50%, 50%); */
 }
 
 .wrapper img {
@@ -61,38 +66,52 @@ body {
     left: 0;
     height: 100vh;
     width: 100vw;
+    object-fit: cover;
+    /* transform: translate(-50%, -50%); */
 }
 
 #B1 {
+    position: absolute;
     z-index: 10;
 }
 
 #B2 {
+    position: absolute;
     z-index: 9;
 }
 
 #B3 {
+    position: absolute;
     z-index: 7;
 }
 
 #B4 {
+    position: absolute;
     z-index: 4;
 }
 
 #B5 {
+    position: absolute;
     z-index: 7;
+    /* transform: translate(-50%, -50%); */
 }
 
 #B6 {
     z-index: 6;
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
 }
 
 #Sky {
+    position: absolute;
     z-index: 5;
+    /* transform: translate(-50%, -50%); */
     
 }
 
 #Sea {
+    position: absolute;
     z-index: 0;
+    /* transform: translate(-50%, -50%); */
     /* transform: scale(1.025); */
 }
